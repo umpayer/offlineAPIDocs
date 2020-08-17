@@ -58,11 +58,11 @@
 |	email	|	邮箱	|	64	|	M	|		|
 |	签约信息：		|
 |	signType	|	签约协议类型	 |	1	|	O	| 0:纸质协议 1:电子签章协议,默认为电子签章协议<br>2:免签（暂不支持） 3：电子签章免签商户章   | 
-|	signName	|	签约人姓名	 |	32	|	C	|	电子签章协议需要必填	|
-|	signMobileNo	|	签约人手机号	 |	11     |	C	|	电子签章协议需要必填	|
-|	signCertNo	|	签约人身份证号	 |	18     |	C	|	电子签章协议需要必填	|
-|	appName		|	APP名称 	    |	   32	  |	C	|	展示电子合同的app名称或者网址URL,appName和webSite任选其一,电子签章协议需要必填	|
-|	webSite		|	商户网址	  |	256	|	C	|	展示电子合同的app名称或者网址URL,appName和webSite任选其一,电子签章协议需要必填	|
+|	signName	|	签约人姓名	 |	32	|	C	|	signType为2（电子签章协议）需要必填	|
+|	signMobileNo	|	签约人手机号	 |	11     |	C	|	signType为2（电子签章协议）需要必填	|
+|	signCertNo	|	签约人身份证号	 |	18     |	C	|	signType为2（电子签章协议）需要必填	|
+|	appName		|	APP名称 	    |	   32	  |	C	|	展示电子合同的app名称或者网址URL,appName和webSite任选其一,signType为2或3时需要必填	|
+|	webSite		|	商户网址	  |	256	|	C	|	展示电子合同的app名称或者网址URL,appName和webSite任选其一,signType为2或3时需要必填	|
 |	结算账户信息：		|
 |	settleAccountType	|	结算账户类型	|	1	|	M	|	1:对公账户 2:法人账户3：被授权人账户<br>merchantType=3时必填2	|
 |	settleAccountNo	|	结算账号	|	30	|	M	|		|
