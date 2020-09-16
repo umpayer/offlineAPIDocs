@@ -40,9 +40,6 @@
 |--------|--------|--------|--------|--------|
 |	respCode	|	返回码	|	8	|	M	|	返回码	|
 |	respMsg	|	返回信息	|	128	|	M	|	返回信息	|
-|	settleTime	|	结算时间	|	14	|	C	|	格式：yyyyMMddHHmmSS	|
-|	settleAmt	|	结算金额	|	13	|	C	|	单位为分	|
-|	settleComAmt	|	结算手续费金额	|	13	|	C	|	单位为分	|
 |	signature	|	签名	|	256	|	M	|	参见签名机制	|
 
  **返回报文示例**
