@@ -24,31 +24,31 @@
 	}
   
   public static X509Certificate returnX509Cer() throws Exception {
-		try {
-			//转换成二进制流
-			ByteArrayInputStream bais = new ByteArrayInputStream(getFileContent(keyFile));
+	try {
+            //转换成二进制流
+            ByteArrayInputStream bais = new ByteArrayInputStream(getFileContent(keyFile));
             CertificateFactory cf = CertificateFactory.getInstance("X.509");
             X509Certificate xCert = (X509Certificate)cf.generateCertificate(bais);
-			return xCert;
-		} catch (Exception e) {
-			throw new Exception("[UMF SDK] 秘钥内容读取错误", e);
-		}
+            return xCert;
+	} catch (Exception e) {
+            throw new Exception("[UMF SDK] 秘钥内容读取错误", e);
+	}
 	}
   
   public static byte[] getFileContent(String fileName) throws Exception {
-		byte[] data = (byte[]) null;
-		FileInputStream fis = null;
-		try {
-			File f = new File(fileName);
-			data = new byte[(int) f.length()];
-			fis = new FileInputStream(f);
-			fis.read(data);
-		} catch (IOException e) {
-			return null;
-		} finally {
-			if (fis != null) fis.close();
-		}
-		return data;
+	byte[] data = (byte[]) null;
+	FileInputStream fis = null;
+	try {
+            File f = new File(fileName);
+            data = new byte[(int) f.length()];
+            fis = new FileInputStream(f);
+            fis.read(data);
+	} catch (IOException e) {
+            return null;
+	} finally {
+            if (fis != null) fis.close();
+	}
+	return data;
 	}
 
 ```
