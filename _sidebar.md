@@ -39,7 +39,7 @@
     * [3.17网银充值接口调用](offline/onlineBankRecharge.md)
     * [3.18充值订单查询](offline/queryRecharge.md)
     * [3.19单笔付款接口](offline/revPay.md)
-    * [3.20单笔付款接口](offline/queryAccount.md)
+    * [3.20查询账户余额](offline/queryAccount.md)
 * **4.回调通知接口定义**
     * [4.1商户入网审核结果通知](basicability/notify.md)
     * [4.2交易结果通知](basicability/tradenotify.md)
