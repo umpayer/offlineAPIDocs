@@ -9,8 +9,8 @@
 ## 1.5.2 加密demo示例
 
 ```java
-		public static String encode(String data) throws Exception {
-		    X509Certificate cert = returnX509Cer();
+  public static String encode(String data) throws Exception {
+	X509Certificate cert = returnX509Cer();
         byte[] keyBytes = cert.getPublicKey().getEncoded();
         // 取得公钥
         X509EncodedKeySpec x509KeySpec = new X509EncodedKeySpec(keyBytes);
@@ -52,13 +52,6 @@
 	}
 
 ```
-加密通过
 **********demo结束，至此若均成功，说明成功**************
-
-
-**/
-
-?>
-
 ```
 
